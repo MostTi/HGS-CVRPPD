@@ -1,0 +1,36 @@
+// example for no routes
+
+{
+    "routes": [],
+    "distance": -1
+}
+
+
+// example for one route
+
+{
+    "routes":[
+        {
+            "id": 1,
+            "order": [1, 2, 3, 4]
+        }
+    ],
+    "distance": <number>
+}
+
+
+// example for multiple routes
+
+{
+    "routes": [
+        {
+            "id": 1,
+            "order": [1, 2, 3, 4]
+        },
+        {
+            "id": 2,
+            "order": [6, 7, 9, 8]
+        }
+    ],
+    "distance": <number>
+}

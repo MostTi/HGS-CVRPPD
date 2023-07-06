@@ -1,0 +1,36 @@
+{
+    "distance_per_vehicle": <number>,           // in km (default 3000)
+    "edge_weight_type": <string>,               // REAL or EUC_2D (default REAL)
+    "capacity": <number>,                       // vehicle capacity (default 8)
+    "options": {
+        "it": <number>,                         // number of iterations without improvement (default 20000) (optional)
+        "t": <number>,                          // time limit (optional)
+        "nv": <number>                          // number of vehicles (required)
+    },
+    "depot": {                                  // default location?
+        "id": <number>,
+        "latitude": <number>,                   // y-coord for EUC_2D
+        "longitude": <number>,                  // x-coord for EUC_2D
+    },
+    "transport_requests":[
+        {
+            "pickup": {
+                "id": <number>,
+                "location": {
+                    "longitude": <number>,      // x-coord for EUC_2D
+                    "latitude": <number>        // y-coord for EUC_2D
+                }
+            },
+            "drop_off": {
+                "id": <number>,
+                "location": {
+                    "longitude": <number>,      // x-coord for EUC_2D
+                    "latitude": <number>        // y-coord for EUC_2D
+                }
+            }
+        },
+        {
+            ...
+        }
+    ]
+}
